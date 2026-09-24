@@ -16,7 +16,7 @@ end)
 local function prompt()
 	return ya.input {
 		title = "Smart filter:",
-		pos = { "top-right", y = 0, w = 25, h = 1 },
+		pos = { "top-right", y = 0, w = 9999, h = 1 }, -- ponytail: full-width input (yazi clamps to the terminal)
 		realtime = true,
 		debounce = 0.1,
 	}
